@@ -37,6 +37,11 @@ var DemoBar = cc.Class({
         cc.log("custom in");
         cc.log("current custom count is " + this.customs.length);
     }
+    customOut:function(custom){
+        this.customs.pull(custom);
+        cc.log("custom out");
+        cc.log("miss custom count is " + this.customs.length);
+    }
     // called every frame, uncomment this function to activate update callback
     // update: function (dt) {
 
